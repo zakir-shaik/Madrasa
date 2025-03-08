@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="Referrer-Policy" content="strict-origin-when-cross-origin">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Madarsa Arabia Atharululoom provides high-quality education integrating modern academics with traditional Islamic teachings.">
+    <link rel="icon" href="logo.png" type="image/x-icon">
+    <title>Madrasa Arabia Atharul Uloom</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navigation">
+        <img src="logo.png" alt="Madrasa Logo">
+        <h1>Madrasa Arabia Atharul Uloom</h1>
+        <div class="menu-toggle" onclick="toggleMenu()">
+            <i class="fas fa-bars"></i>
+        </div>
+        <ul>
+            <li><a href="index.html"><i class="fas fa-home"></i> Home</a></li>
+            <li><a href="donate.html"><i class="fas fa-heart"></i> Donate</a></li>
+            <li><a href="admission.html"><i class="fas fa-school"></i> Admission</a></li>
+            <li><a href="programs.html"><i class="fas fa-book"></i> Our Mission</a></li>
+            <li><a href="gallery.html"><i class="fas fa-images"></i> Gallery</a></li>
+            <li><a href="about.html"><i class="fas fa-info-circle"></i> About</a></li>
+        </ul>
+    </nav>
+
+    
+    <div class="container11">
+        <div class="section11">
+            <h2>About Us</h2>
+            <p>Madarsa Arabia Atharululoom is a distinguished institution committed to providing completely free education to all students, ensuring access to quality learning without financial barriers. We believe that education is a right, not a privilege, and strive to offer a curriculum that blends Islamic values with modern knowledge to develop well-rounded individuals.</p>
+        </div>
+        <div class="section11">
+            <h2>Islamic Education</h2>
+            <p>Islamic education has played a central role in Islam since the very beginning, emphasizing the importance of scripture, learning, and moral development. Our madarsa provides a safe and structured environment where students are nurtured under the guidance of teachers, engage in religious activities, and develop a strong sense of discipline and independence. To maintain modesty and focused learning, we have separate campuses for boys and girls, ensuring an environment that aligns with Islamic teachings and values.</p>
+        </div>
+        <div class="section11">
+            <h2>Our Vision</h2>
+            <p>At Madarsa Arabia Atharululoom, we aim to nurture resilient, holistic, and lifelong learners in a multi-cultural environment, fostering both Islamic values and modern education. Our school is designed to provide an enriching educational experience that not only builds academic excellence but also develops character, leadership, and critical thinking.</p>
+            <p>We aspire to prepare students for the future, equipping them with 21st-century skills, an entrepreneurial mindset, and a strong ethical foundation. Through real-life experiences, mentorship programs, and values-driven education, we empower young minds to excel in both faith and worldly success, making a lasting impact on their communities and beyond.</p>
+        </div>
+    </div>
+    <section class="schools">
+        <div class="school">
+            <img src="Class2.JPG" alt="Athar Excellence School">
+            <div class="school-info">
+                <h3>📌 Athar Excellence School (English Medium – Up to 10th Class)</h3>
+                <p>Building a strong academic foundation with modern teaching methods.</p>
+            </div>
+        </div>
+        <div class="school">
+            <img src="Kids.JPG" alt="Athar Smart Kids">
+            <div class="school-info">
+                <h3>📌 Athar Smart Kids (Nursery to UKG)</h3>
+                <p>Nurturing young minds with quality education in a caring environment.</p>
+            </div>
+        </div>
+        <div class="school">
+            <img src="CLASS1.JPG" alt="Athar First Steps">
+            <div class="school-info">
+                <h3>📌 Athar First Steps (For ages 2.5 to 4 years)</h3>
+                <p>A joyful start to learning through interactive and fun-based activities.</p>
+            </div>
+        </div>
+    </section>
+    <div class="section contact-form">
+        <h2>Contact Us</h2>
+        <input type="text" id="subject" placeholder="Enter Subject">
+        <textarea id="message" rows="4" placeholder="Enter your message"></textarea>
+        <button onclick="sendEmail()">Send</button>
+    </div>
+    <script>
+        function sendEmail() {
+            var subject = document.getElementById("subject").value;
+            var body = document.getElementById("message").value;
+            window.location.href = "mailto:atharululoom@gmail.com?subject=" + encodeURIComponent(subject) + "&body=" + encodeURIComponent(body);
+        }
+    </script>
+    <footer>
+        <img src="logo.png" alt="Madarsa Logo" class="footer-logo">
+        <div class="footer-content">
+            <p><strong>Contact Us</strong></p>
+            <p>📍 Location: Eidgah Road, Chandole, Bapatla Dist., Andhra Pradesh – 522311</p>
+            <p>📧 Email: atharululoom@gmail.com</p>
+            <p>📢 For Admissions & Inquiries Contact: 📞 Phone / WhatsApp: +91-9963502803 </p>
+            <p>🌐 Website: <a href="http://www.madarsaatharululoom.com" style="color: #f1f1f1; text-decoration: none;">www.madarsaatharululoom.com</a></p>
+            <p>&copy; 2024 Madrasa Arabia Atharul Uloom. All Rights Reserved.</p>
+        </div>
+        <div id="google_translate_element" class="language-selector"></div>
+        <script type="text/javascript">
+            function googleTranslateElementInit() {
+                new google.translate.TranslateElement({pageLanguage: 'en'}, 'google_translate_element');
+            }
+        </script>
+        <script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    </footer>
+
+
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.navigation ul').classList.toggle('active');
+        }
+    </script>
+</body>
+
